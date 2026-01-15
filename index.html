@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Capes AB – Advertising & E-commerce Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #0f3d2e;
+            color: #e8fff5;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(5, 40, 28, 0.9);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e8fff5;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #7CFFB2;
+        }
+
+        section {
+            padding: 100px 10%;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .hero {
+            height: 100vh;
+            background: 
+                linear-gradient(rgba(0, 60, 40, 0.75), rgba(0, 60, 40, 0.75)),
+                url("https://images.unsplash.com/photo-1758611972595-ac23d772446f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background: rgba(15, 80, 55, 0.6);
+            padding: 30px;
+            border-radius: 6px;
+        }
+
+        .process-step {
+            border-left: 4px solid #7CFFB2;
+            padding-left: 20px;
+        }
+
+        .contacts {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contacts p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            font-size: 18px;
+        }
+
+        footer {
+            background: #05281c;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Two Capes AB</div>
+    <ul>
+        <li><a href="#hero">Start</a></li>
+        <li><a href="#services">Tjänster</a></li>
+        <li><a href="#contacts">Kontakt</a></li>
+    </ul>
+</nav>
+
+<section id="hero" class="hero">
+    <h1>Two Capes AB</h1>
+    <p>
+        Strategisk rådgivning inom advertising, marketing, varumärkesutveckling och e-commerce.
+        Vi hjälper företag att växa genom datadrivna beslut, tydlig positionering och lönsamma digitala affärsmodeller.
+    </p>
+</section>
+
+<section id="about">
+    <h2>Vilka vi är</h2>
+    <p>
+        Two Capes AB är ett svenskt konsultbolag med fokus på kommersiell tillväxt i den digitala ekonomin.
+        Vi arbetar nära våra kunder för att skapa tydliga marknadsstrategier som kan omsättas i mätbara resultat.
+        Vår erfarenhet sträcker sig från performance marketing till varumärkesarkitektur och e-commerce-optimering.
+        Vi tror på enkelhet, transparens och affärslogik framför kortsiktiga trender.
+        Varje uppdrag anpassas efter kundens mål, marknad och organisatoriska förutsättningar.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Vad vi gör</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>Advertising & Performance</h3>
+            <p>
+                Vi planerar och optimerar annonsering i digitala kanaler med tydligt fokus på ROI.
+                Genom kontinuerlig analys förbättrar vi konverteringar och kundanskaffning.
+                Målet är skalbar tillväxt utan onödiga kostnader.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Brand & Positionering</h3>
+            <p>
+                Vi hjälper varumärken att definiera sitt erbjudande och sin röst på marknaden.
+                Ett starkt brand skapar förtroende, differentiering och långsiktig lönsamhet.
+                Arbetet grundas alltid i affärsstrategi och målgruppsinsikt.
+            </p>
+        </div>
+        <div class="card">
+            <h3>E-commerce Consulting</h3>
+            <p>
+                Vi analyserar hela den digitala köpresan – från trafik till checkout.
+                Fokus ligger på struktur, användarupplevelse och konverteringsgrad.
+                Resultatet är e-commerce-lösningar som säljer mer och fungerar bättre.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="advantages">
+    <h2>Vårt mervärde</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>Affärsfokus</h3>
+            <p>
+                Vi pratar inte bara marknadsföring, utan affär.
+                Alla beslut kopplas till intäkter, marginaler och tillväxt.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Erfarenhet i praktiken</h3>
+            <p>
+                Vår rådgivning bygger på verkliga case och operativ erfarenhet.
+                Inga generiska presentationer eller teoretiska modeller.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Långsiktigt partnerskap</h3>
+            <p>
+                Vi arbetar som en förlängning av kundens team.
+                Målet är hållbara lösningar, inte snabba kampanjer.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="process">
+    <h2>Så arbetar vi</h2>
+    <div class="grid-3">
+        <div class="process-step">
+            <h3>1. Analys & insikt</h3>
+            <p>
+                Vi kartlägger nuläge, mål och marknad för att förstå affären på djupet.
+            </p>
+        </div>
+        <div class="process-step">
+            <h3>2. Strategi & struktur</h3>
+            <p>
+                Tydlig plan med prioriteringar, kanaler och mätbara KPI:er.
+            </p>
+        </div>
+        <div class="process-step">
+            <h3>3. Implementering & optimering</h3>
+            <p>
+                Löpande uppföljning, justering och förbättring för bästa resultat.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contacts" class="contacts">
+    <h2>Låt oss prata</h2>
+    <p>
+        Är du redo att ta nästa steg med ditt varumärke eller din e-commerce?
+        Kontakta oss för en första dialog om hur vi kan skapa verkligt affärsvärde tillsammans.
+        Vi återkommer snabbt och konkret.
+    </p>
+
+    <div class="contact-info">
+        <p>Email: info@twocapes.org</p>
+        <p>Linnégatan 149</p>
+        <p>216 18 Limhamn</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Two Capes AB. All rights reserved.
+</footer>
+
+</body>
+</html>
